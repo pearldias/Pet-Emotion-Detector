@@ -27,25 +27,6 @@ npm install
 npm run dev
 ```
 
-### Backend Setup
-
-1. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\activate
-```
-
-2. Install dependencies:
-```bash
-cd server
-pip install -r requirements.txt
-```
-
-3. Start the Flask server:
-```bash
-python app.py
-```
-
 ## Usage
 
 1. Open your browser and navigate to the frontend URL (default: http://localhost:5173)
