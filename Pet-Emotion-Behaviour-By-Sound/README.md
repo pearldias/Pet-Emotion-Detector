@@ -8,9 +8,6 @@ A web application that analyzes pet sounds to determine their emotional state us
 ├── src/               # React frontend
 │   ├── App.jsx       # Main application component
 │   └── index.css     # Tailwind CSS styles
-└── server/           # Flask backend
-    ├── app.py        # Flask server
-    └── requirements.txt # Python dependencies
 ```
 
 ## Setup
