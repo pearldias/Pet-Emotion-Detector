@@ -1,0 +1,17 @@
+modules = ["nodejs-20", "python-3.12", "web"]
+run = "npm run dev"
+
+[nix]
+channel = "stable-24_05"
+packages = ["lsof"]
+
+[deployment]
+run = ["sh", "-c", "python app.py"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5173
+externalPort = 5173
