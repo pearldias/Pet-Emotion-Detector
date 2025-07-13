@@ -1,0 +1,112 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Card Wrapper */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 2rem;
+  font-family: monospace;
+}
+
+/* File Input */
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: #374151;
+  background-color: #eff6ff;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+input[type="file"]:hover {
+  background-color: #dbeafe;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eff6ff;
+  border-radius: 0.75rem;
+  text-align: center;
+  color: #1e3a8a;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.1);
+}
+
+.result-box p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button,
+  input[type="file"] {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+
+  .result-box p {
+    font-size: 0.9rem;
+  }
+}
